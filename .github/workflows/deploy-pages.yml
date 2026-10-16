@@ -31,11 +31,14 @@ jobs:
         run: npm ci
 
       # Pages is static hosting. The contact form continues to offer its
-      # mailto fallback, while the server-only webhook endpoint is omitted.
-      - name: Exclude server-only contact endpoint for static export
+      # mailto fallback, while server-only endpoints and generated metadata
+      # routes are omitted from this export.
+      - name: Exclude server-only routes for static export
         run: |
           rm -rf src/app/api
           rm -f tests/contact-route.test.ts
+          rm -f src/app/robots.ts src/app/sitemap.ts
+          rm -f src/app/opengraph-image.tsx src/app/twitter-image.tsx
 
       - name: Build static site
         env:
