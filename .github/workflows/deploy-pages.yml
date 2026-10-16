@@ -33,7 +33,9 @@ jobs:
       # Pages is static hosting. The contact form continues to offer its
       # mailto fallback, while the server-only webhook endpoint is omitted.
       - name: Exclude server-only contact endpoint for static export
-        run: rm -rf src/app/api
+        run: |
+          rm -rf src/app/api
+          rm -f tests/contact-route.test.ts
 
       - name: Build static site
         env:
