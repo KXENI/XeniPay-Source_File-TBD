@@ -2,9 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowUpRight } from "lucide-react";
 import type { ReactNode } from "react";
+import { assetPath } from "@/lib/asset-path";
 
 export function Logo() {
-  return <Link href="/" className="brand" aria-label="XeniPay home"><Image src="/brand/xenipay-light.svg" alt="XeniPay" width={272} height={66} priority /></Link>;
+  return <Link href="/" className="brand" aria-label="XeniPay home"><Image src={assetPath("/brand/xenipay-light.svg")} alt="XeniPay" width={272} height={66} priority /></Link>;
 }
 
 export function ButtonLink({ href, children, secondary = false, className = "" }: { href: string; children: ReactNode; secondary?: boolean; className?: string }) {

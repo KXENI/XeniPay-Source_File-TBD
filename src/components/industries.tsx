@@ -4,6 +4,7 @@ import { useEffect, useRef, useState, type KeyboardEvent } from "react";
 import { ArrowUpRight, Building2, Hotel, Plane, Route, Check } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
+import { assetPath } from "@/lib/asset-path";
 
 const industries = [
   { name: "Travel agents", icon: Route, image: "/industries/travel-agents-real.jpg", imagePosition: "center 34%", heading: "Less chasing payments. More moving people.", description: "Connect each booking to its payment journey. Get a clearer view of supplier obligations and your earnings, so your team can focus on the next great trip.", points: ["A shared view of booking status", "Clear supplier and agent payment records", "Less manual reconciliation"], source: "Travel agency", destination: "Travel suppliers", initials: "TA", amount: "$245.00", amountLabel: "Agent earnings" },
@@ -55,7 +56,7 @@ export function Industries() {
         <div className="industry-copy"><h3>{industry.heading}</h3><p>{industry.description}</p><ul>{industry.points.map(point => <li key={point}><Check size={15}/>{point}</li>)}</ul><Link href={`/contact?industry=${encodeURIComponent(industry.name)}`} className="text-link">Let’s talk about your business<ArrowUpRight size={17}/></Link></div>
         <div className="industry-visual" aria-label={`Example transaction connecting ${industry.source} and ${industry.destination}`}>
           <div className="industry-photo-card">
-            <Image className="industry-photo" src={industry.image} alt="" fill sizes="(max-width: 640px) 340px, 420px" style={{ objectPosition: industry.imagePosition }}/>
+            <Image className="industry-photo" src={assetPath(industry.image)} alt="" fill sizes="(max-width: 640px) 340px, 420px" style={{ objectPosition: industry.imagePosition }}/>
             <div className="industry-photo-wash" aria-hidden="true"/>
             <div className="industry-visual-grid" aria-hidden="true"/>
             <div className="industry-node"><span><Icon size={22}/></span><strong>{industry.source}</strong><small>BOOKING CONNECTED</small></div>

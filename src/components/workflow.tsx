@@ -21,6 +21,7 @@ import {
   UsersRound,
   WalletCards,
 } from "lucide-react";
+import { assetPath } from "@/lib/asset-path";
 
 const STEP_DURATION = 5200;
 
@@ -31,7 +32,7 @@ const steps = [
   { title: "Settle with confidence", description: "Move from reconciliation to settlement with a consistent record that everyone can follow.", label: "Settlement complete" },
 ];
 
-const workflowAsset = "/product/workflow-assets";
+const workflowAsset = assetPath("/product/workflow-assets");
 
 function XdsStatus({ tone, icon, children }: { tone: string; icon: string; children: React.ReactNode }) {
   return <span className={`xds-status ${tone}`}><Image src={`${workflowAsset}/${icon}`} width={16} height={16} alt=""/>{children}</span>;
@@ -314,7 +315,7 @@ export function Workflow({ mode = "combined" }: { mode?: WorkflowMode }) {
               </div>
 
               <div className="geo-activity">
-                <div className="map-wrap"><Image src="/product/analytics-world-map.svg" width={584} height={291} alt="World map showing settlement activity across XeniPay markets"/></div>
+                <div className="map-wrap"><Image src={assetPath("/product/analytics-world-map.svg")} width={584} height={291} alt="World map showing settlement activity across XeniPay markets"/></div>
                 <div className="country-list">
                   <div><b>Country</b><b>Count</b></div>
                   {countries.map(([country, count, percent]) => <div key={country}><span>{country}</span><strong>{count}</strong><i style={{ width: `${percent}%` }}/></div>)}
