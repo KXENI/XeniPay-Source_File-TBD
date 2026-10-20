@@ -134,7 +134,6 @@ const bookingMix = [
 ] as const;
 
 const countries = [
-  ["India", "8K", 100],
   ["United States", "5.5K", 72],
   ["Mexico", "1.4K", 35],
   ["Canada", "1.3K", 31],

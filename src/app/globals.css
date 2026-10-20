@@ -333,14 +333,14 @@ h2 > span { color: #8f9da4; }
 .live-overview > div { min-width: 0; padding: 15px; }
 .live-overview > div + div { border-left: 1px solid var(--paper-100); }
 .live-metric > span { display: block; color: var(--text-light-muted); font-size: 7.5px; }
-.live-metric > strong { display: block; font-size: 25px; line-height: 1; margin-top: 5px; letter-spacing: -.9px; }
-.minute-bars { height: 91px; display: flex; align-items: flex-end; gap: 4px; margin-top: 13px; padding-bottom: 4px; border-bottom: 1px solid var(--paper-100); }
+.live-metric > strong { display: block; font-size: 25px; line-height: 1; margin-top: 12px; letter-spacing: -.9px; }
+.minute-bars { height: 91px; display: flex; align-items: flex-end; gap: 4px; margin-top: 20px; padding-bottom: 4px; border-bottom: 1px solid var(--paper-100); }
 .minute-bars i { width: 100%; min-width: 2px; border-radius: 2px 2px 0 0; background: linear-gradient(180deg, var(--violet-500), var(--rail-500)); transform-origin: bottom; animation: bar-rise .7s cubic-bezier(.2,.7,.2,1) both; }
 .minute-bars i:nth-child(2n) { animation-delay: .08s; }
 .minute-bars i:nth-child(3n) { animation-delay: .15s; }
-.live-metric small { display: flex; align-items: center; gap: 4px; font-size: 6.5px; color: var(--text-light-muted); margin-top: 8px; }
+.live-metric small { display: flex; align-items: center; gap: 4px; font-size: 6.5px; color: var(--text-light-muted); margin-top: 10px; }
 .product-label { display: block; font-size: 9px; font-weight: 650; color: var(--text-light-muted); margin-bottom: 15px; }
-.booking-mix > div { display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px 10px; }
+.booking-mix > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); grid-template-rows: repeat(2, auto); gap: 15px 10px; }
 .booking-mix figure { margin: 0; text-align: center; }
 .donut { --share: 90deg; position: relative; isolation: isolate; margin-inline: auto; width: 50px; height: 50px; display: grid; place-items: center; border-radius: 50%; background: conic-gradient(var(--violet-500) var(--share), var(--paper-100) 0); font-size: 8px; font-weight: 700; }
 .donut::before { content: ""; position: absolute; z-index: -1; inset: 6px; background: var(--paper-0); border-radius: 50%; }
