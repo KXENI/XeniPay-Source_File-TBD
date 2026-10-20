@@ -6,7 +6,7 @@ import { useEffect } from "react";
 export function ScrollReveal() {
   useEffect(() => {
     if (!window.IntersectionObserver || window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    const elements = document.querySelectorAll<HTMLElement>(".section-heading, .feature-card, .workflow-grid, .technology-copy, .centered-heading, .cta-section");
+    const elements = document.querySelectorAll<HTMLElement>(".section-heading, .feature-card, .workflow-grid, .technology-copy, .centered-heading, .settlement-stats-card, .cta-section");
     const observer = new IntersectionObserver(entries => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {

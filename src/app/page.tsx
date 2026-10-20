@@ -7,6 +7,7 @@ import { Workflow } from "@/components/workflow";
 import { Industries } from "@/components/industries";
 import { FaqAccordion } from "@/components/faq-accordion";
 import { ScrollReveal } from "@/components/scroll-reveal";
+import { SettlementStats } from "@/components/settlement-stats";
 import { site } from "@/lib/site";
 
 export const metadata: Metadata = { alternates: { canonical: "/" } };
@@ -25,6 +26,8 @@ export default function HomePage() {
       </div>
       <div className="hero-proof shell" aria-label="XeniPay benefits"><div><ShieldCheck size={16}/>Shared transaction records</div><div><Globe2 size={16}/>Connected counterparties</div><div><Zap size={16}/>Simpler settlement</div></div>
     </section>
+
+    <SettlementStats/>
 
     <section id="platform" className="section shell platform-section" aria-labelledby="platform-heading">
       <div className="section-heading"><div><Eyebrow>THE PAYMENT DISCONNECT</Eyebrow><h2 id="platform-heading">The trip is seamless.<br/><span>The settlement should be, too.</span></h2></div><p>Behind every booking is a chain of businesses.<br/>XeniPay puts them on the same page, so payments<br className="desktop-break"/> can move forward.</p></div>
