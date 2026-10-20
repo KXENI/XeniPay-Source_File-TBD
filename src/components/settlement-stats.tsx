@@ -38,7 +38,7 @@ export function SettlementStats() {
       }
 
       const startedAt = performance.now();
-      const duration = 1700;
+      const duration = 2800;
       const tick = (now: number) => {
         const elapsed = Math.min((now - startedAt) / duration, 1);
         const eased = 1 - Math.pow(1 - elapsed, 3);
