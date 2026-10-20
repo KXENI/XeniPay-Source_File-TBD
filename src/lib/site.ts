@@ -8,8 +8,8 @@ export const site = {
 export const navigation = [
   { label: "Platform", href: "/#platform" },
   { label: "How it works", href: "/#how-it-works" },
-  { label: "Who it’s for", href: "/#industries" },
   { label: "Why XeniPay", href: "/#why-xenipay" },
+  { label: "Who it’s for", href: "/#industries" },
 ];
 
 export const faqs = [

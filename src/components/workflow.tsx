@@ -324,7 +324,7 @@ export function Workflow({ mode = "combined" }: { mode?: WorkflowMode }) {
             </section>
 
             <section className="activity-panel" aria-label={`User activity, ${range} range`}>
-              <div className="activity-heading"><div><h4>User Activity</h4><span role="status" aria-live="polite">{toolbarMessage}</span></div><div className="activity-legend"><i/>Verified events</div></div>
+              <div className="activity-heading"><div><h4>User Activity</h4><span role="status" aria-live="polite">{toolbarMessage}</span></div></div>
               <div className="chart-wrap">
                 <span className="chart-y y-top">40</span><span className="chart-y y-middle">20</span><span className="chart-y y-bottom">0</span>
                 <svg viewBox={`0 0 ${width} ${height}`} role="img" aria-label={`Activity chart for ${range}`} preserveAspectRatio="xMidYMid meet">
@@ -339,14 +339,14 @@ export function Workflow({ mode = "combined" }: { mode?: WorkflowMode }) {
                     r={hoveredPoint === index ? 4.5 : 2.7}
                     tabIndex={0}
                     role="button"
-                    aria-label={`Day ${index + 1}: ${point.value} verified events`}
+                    aria-label={`Day ${index + 1}: ${point.value} events`}
                     onMouseEnter={() => setHoveredPoint(index)}
                     onMouseLeave={() => setHoveredPoint(null)}
                     onFocus={() => setHoveredPoint(index)}
                     onBlur={() => setHoveredPoint(null)}
                   />)}
                 </svg>
-                {hoveredPoint !== null && <div className="chart-tooltip" style={{ left: `${(points[hoveredPoint].x / width) * 100}%`, top: `${(points[hoveredPoint].y / height) * 100}%` }}><span>Verified events</span><strong>{points[hoveredPoint].value}</strong></div>}
+                {hoveredPoint !== null && <div className="chart-tooltip" style={{ left: `${(points[hoveredPoint].x / width) * 100}%`, top: `${(points[hoveredPoint].y / height) * 100}%` }}><span>Events</span><strong>{points[hoveredPoint].value}</strong></div>}
                 <div className="chart-dates" aria-hidden="true"><span>14 Nov</span><span>20 Nov</span><span>26 Nov</span><span>02 Dec</span><span>08 Dec</span></div>
               </div>
             </section>
@@ -360,7 +360,6 @@ export function Workflow({ mode = "combined" }: { mode?: WorkflowMode }) {
         </div>
       </div>
 
-      <div className="preview-caption"><span>PRODUCT PREVIEW · INTERACTIVE</span><span>0{active + 1} / 04</span></div>
     </div>}
   </div>;
 }
