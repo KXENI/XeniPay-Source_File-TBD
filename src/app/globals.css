@@ -309,7 +309,7 @@ h2 > span { color: #8f9da4; }
 .product-app { display: grid; grid-template-columns: 132px minmax(0, 1fr); height: 690px; overflow: hidden; background: var(--paper-50); color: var(--ink-900); }
 .product-sidebar { position: relative; display: flex; flex-direction: column; padding: 18px 10px 13px; background: var(--paper-0); border-right: 1px solid var(--paper-100); }
 .product-mark { display: flex; align-items: center; gap: 6px; padding: 0 7px 19px; }
-.product-mark > span { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 6px; color: var(--paper-0); background: var(--rail-500); font-size: 11px; font-weight: 750; transform: rotate(-6deg); box-shadow: 0 4px 12px color-mix(in srgb, var(--rail-500) 22%, transparent); }
+.product-mark > span { display: grid; place-items: center; width: 21px; height: 21px; border-radius: 6px; color: var(--paper-0); background: var(--rail-500); font-size: 11px; font-weight: 750; transform: none; box-shadow: 0 4px 12px color-mix(in srgb, var(--rail-500) 22%, transparent); }
 .product-mark strong { font-size: 12px; letter-spacing: -.5px; }
 .product-sidebar nav { display: flex; flex-direction: column; gap: 3px; }
 .product-sidebar button { width: 100%; display: flex; align-items: center; gap: 8px; border: 0; border-radius: 6px; background: transparent; color: var(--text-light-muted); padding: 8px; text-align: left; font-size: 7px; transition: color .2s, background .2s, transform .2s; }
@@ -321,7 +321,7 @@ h2 > span { color: #8f9da4; }
 .product-toolbar button { display: grid; place-items: center; width: 25px; height: 25px; padding: 0; border-radius: 7px; border: 1px solid var(--paper-100); color: var(--ink-900); background: var(--paper-0); transition: color .2s, border-color .2s, transform .2s, box-shadow .2s; }
 .product-toolbar button:hover, .product-toolbar button:focus-visible { color: var(--rail-500); border-color: var(--violet-300); transform: translateY(-1px); box-shadow: 0 5px 13px color-mix(in srgb, var(--rail-500) 10%, transparent); }
 .product-tools { display: flex; gap: 5px; }
-.product-content { padding: 12px 14px 15px; height: calc(100% - 47px); overflow: auto; scrollbar-width: thin; scrollbar-color: var(--violet-300) transparent; }
+.product-content { padding: 12px 14px 15px; height: calc(100% - 47px); overflow: hidden; }
 .product-title-row { display: flex; align-items: flex-end; justify-content: space-between; gap: 10px; margin-bottom: 9px; }
 .product-title-row > div:first-child > span { display: block; font: 5px var(--font-mono); letter-spacing: .9px; color: var(--text-light-muted); margin-bottom: 3px; }
 .product-title-row h3 { margin: 0; font-size: 13px; font-weight: 650; letter-spacing: -.3px; }
@@ -664,7 +664,7 @@ h2 > span { color: var(--text-dark-muted); }
   .feature-grid { grid-template-columns: 1fr; gap: 15px; } .feature-card { padding: 26px 25px 0; min-height: 340px; } .feature-icon { margin-bottom: 19px; } .feature-card h3 { font-size: 24px; } .feature-card p { font-size: 12px; max-width: 320px; } .record-visual { margin-inline: 15px; margin-top: 24px; } .speed-visual { height: 210px; } .control-visual { margin-inline: 15px; font-size: 10px; } .feature-speed { min-height: 430px; }
   .workflow-grid { grid-template-columns: 1fr; gap: 30px; } .workflow-step strong { font-size: 16px; } .workflow-step { padding: 19px 0; } .step-description { font-size: 12px; }
   .steps-only { grid-template-columns: 1fr; gap: 26px; } .steps-only .workflow-steps { width: 100%; } .workflow-step-stage { width: 100%; }
-  .product-preview { transform: none; } .product-app { grid-template-columns: 1fr; height: 515px; } .product-sidebar { display: none; } .product-content { padding-inline: 10px; } .product-toolbar { padding-inline: 10px; }
+  .product-preview { transform: none; } .product-app { grid-template-columns: 1fr; height: 650px; } .product-sidebar { display: none; } .product-content { padding-inline: 10px; } .product-toolbar { padding-inline: 10px; }
   .live-overview { grid-template-columns: .76fr 1.45fr; } .geo-activity { grid-template-columns: minmax(0, 1.5fr) minmax(61px, .65fr); padding-inline: 8px; }
   .technology-section { gap: 36px; } .technology-copy h2 { font-size: 32px; } .technology-copy > p:not(.eyebrow) { font-size: 12px; }
   .centered-heading h2 { font-size: 31px; } .centered-heading > p:last-child { font-size: 12px; line-height: 1.8; max-width: 300px; margin-inline: auto; }
