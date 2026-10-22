@@ -625,7 +625,8 @@ h2 > span { color: var(--text-dark-muted); }
 .form-field textarea { resize: vertical; min-height: 95px; }
 .form-field select { min-height: 47px; }
 .form-field input:hover, .form-field select:hover, .form-field textarea:hover { border-color: var(--sky-400); }
-.form-consent { font-size: 10px; line-height: 1.8; color: var(--text-dark-muted); margin-bottom: 19px; }
+.form-field input:focus, .form-field select:focus, .form-field textarea:focus,
+.form-field input:focus-visible, .form-field select:focus-visible, .form-field textarea:focus-visible { outline: none; border-color: color-mix(in srgb, var(--violet-300) 62%, var(--ink-700)); box-shadow: none; }
 .form-submit { width: 100%; justify-content: space-between; }
 .form-message { font-size: 12px; line-height: 1.8; color: var(--success); border: 1px solid color-mix(in srgb, var(--success) 30%, transparent); border-radius: 6px; background: color-mix(in srgb, var(--success) 7%, transparent); padding: 14px; margin-top: 18px; }
 .form-message a { display: inline-flex; margin-top: 8px; text-decoration: underline; text-underline-offset: 3px; }
