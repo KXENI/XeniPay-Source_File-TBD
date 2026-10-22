@@ -53,7 +53,7 @@ export function Industries() {
         })}
       </div>
       <div role="tabpanel" id={`industry-panel-${active}`} aria-labelledby={`industry-tab-${active}`} tabIndex={0} className="industry-panel" key={active}>
-        <div className="industry-copy"><h3>{industry.heading}</h3><p>{industry.description}</p><ul>{industry.points.map(point => <li key={point}><Check size={15}/>{point}</li>)}</ul><Link href={`/contact?industry=${encodeURIComponent(industry.name)}`} className="text-link">Let’s talk about your business<ArrowUpRight size={17}/></Link></div>
+        <div className="industry-copy"><h3>{industry.heading}</h3><p>{industry.description}</p><ul>{industry.points.map(point => <li key={point}><Check size={18}/>{point}</li>)}</ul><Link href={`/contact?industry=${encodeURIComponent(industry.name)}`} className="text-link">Let’s talk about your business<ArrowUpRight size={17}/></Link></div>
         <div className="industry-visual" aria-label={`Example transaction connecting ${industry.source} and ${industry.destination}`}>
           <div className="industry-photo-card">
             <Image className="industry-photo" src={assetPath(industry.image)} alt="" fill sizes="(max-width: 640px) 340px, 420px" style={{ objectPosition: industry.imagePosition }}/>
