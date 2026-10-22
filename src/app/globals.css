@@ -610,7 +610,7 @@ h2 > span { color: var(--text-dark-muted); }
 .contact-points p { color: var(--text-dark-muted); font-size: 14px; line-height: 1.75; margin: 7px 0 0; }
 .contact-email { display: inline-flex; align-items: center; margin-top: 38px; gap: 11px; font-size: clamp(15px, 1.25vw, 16px); }
 .contact-email svg { color: #abd6bd; }
-.contact-email > span { color: var(--text-dark-muted); }
+.contact-email > span { color: var(--paper-0); }
 .contact-email > strong { color: var(--sky-400); font-weight: 520; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: text-decoration-color .2s ease, color .2s ease; }
 .contact-email:hover > strong, .contact-email:focus-visible > strong { color: var(--violet-300); text-decoration-color: currentColor; }
 .lead-form { border: 1px solid color-mix(in srgb, var(--violet-300) 28%, transparent); padding: 33px; border-radius: 10px; background: linear-gradient(130deg, var(--ink-800), var(--ink-900)); box-shadow: 0 30px 90px color-mix(in srgb, var(--violet-500) 10%, transparent); }
