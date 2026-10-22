@@ -608,7 +608,7 @@ h2 > span { color: var(--text-dark-muted); }
 .contact-points svg { color: #abd6bd; margin-top: 2px; }
 .contact-points strong { color: var(--text-dark); font-size: 16px; display: block; font-weight: 500; }
 .contact-points p { color: var(--text-dark-muted); font-size: 14px; line-height: 1.75; margin: 7px 0 0; }
-.contact-email { display: inline-flex; align-items: center; margin-top: 38px; gap: 9px; font-size: 12px; }
+.contact-email { display: inline-flex; align-items: center; margin-top: 38px; gap: 11px; font-size: clamp(15px, 1.25vw, 16px); }
 .contact-email svg { color: #abd6bd; }
 .contact-email > span { color: var(--text-dark-muted); }
 .contact-email > strong { color: var(--sky-400); font-weight: 520; text-decoration: underline; text-decoration-color: transparent; text-underline-offset: 3px; transition: text-decoration-color .2s ease, color .2s ease; }
